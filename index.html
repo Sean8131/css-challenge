@@ -18,7 +18,6 @@
         align-items: center;
         flex-direction: column;
         height: 100vh;
-        
       }
 
       .hope {
@@ -30,18 +29,50 @@
         margin-top: 100px;
       }
 
-      h1 {
+      .valid {
         letter-spacing: -8px;
         text-transform: uppercase;
         font-size: 7rem;
         -webkit-text-stroke-width: 2px;
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0px;
+      }
+
+      .white {
         -webkit-text-stroke-color: black;
         color: white;
-          font-family: "Archivo Black", sans-serif;
-          font-weight: 400;
-          font-style: normal;
-          margin: 0px;
+        position:fixed;
+        z-index: 5;
+      }
 
+      .red {
+        -webkit-text-stroke-color: black;
+        color: red;
+        position: relative;
+        bottom: 1px;
+        right: 6px;
+        z-index: 4;
+
+      }
+
+      .orange {
+        -webkit-text-stroke-color: black;
+        color: orange;
+        position: absolute;
+        bottom: 6px;
+        right: 12px;
+        z-index: 3;
+      }
+
+      .blue {
+        -webkit-text-stroke-color: black;
+        color: aqua;
+        position: absolute;
+        bottom: 10px;
+        right: 17px;
+        z-index: 2;
       }
 
       .words {
@@ -49,13 +80,23 @@
         font-weight: 600;
         margin: 0px;
       }
+
+      .wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: ;
+      }
     </style>
   </head>
 
   <body>
     <p class="words">your feelings <u>are</u></p>
-    <div>
-      <h1>valid</h1>
+    <div class="wrapper">
+      <div class="valid white">valid</div>
+      <div class="valid red">valid</div>
+      <div class="valid orange">valid</div>
+      <div class="valid blue">valid</div>
     </div>
     <p class="words">it's okay not to be okay.</p>
     <img class="hope" src="VOH_Wordmark_Black.webp" />
