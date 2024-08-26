@@ -29,7 +29,10 @@
         margin-top: 100px;
       }
 
-      .valid {
+      .white,
+      .red,
+      .orange,
+      .blue {
         letter-spacing: -8px;
         text-transform: uppercase;
         font-size: 7rem;
@@ -37,42 +40,41 @@
         font-family: "Archivo Black", sans-serif;
         font-weight: 400;
         font-style: normal;
-        margin: 0px;
       }
 
       .white {
         -webkit-text-stroke-color: black;
         color: white;
-        position:fixed;
         z-index: 5;
+        position: absolute;
       }
 
       .red {
         -webkit-text-stroke-color: black;
         color: red;
-        position: relative;
-        bottom: 1px;
-        right: 6px;
         z-index: 4;
-
+        bottom: 5px;
+        right: 5px;
+        position: relative;
+      
       }
 
       .orange {
         -webkit-text-stroke-color: black;
         color: orange;
         position: absolute;
-        bottom: 6px;
-        right: 12px;
         z-index: 3;
+        bottom: 10px;
+        right: 10px;
       }
 
       .blue {
         -webkit-text-stroke-color: black;
         color: aqua;
         position: absolute;
-        bottom: 10px;
-        right: 17px;
         z-index: 2;
+        bottom: 15px;
+        right: 15px;
       }
 
       .words {
@@ -85,7 +87,10 @@
         position: relative;
         display: flex;
         justify-content: center;
-        align-items: ;
+      }
+
+      .url {
+        margin: 0;
       }
     </style>
   </head>
@@ -93,12 +98,13 @@
   <body>
     <p class="words">your feelings <u>are</u></p>
     <div class="wrapper">
-      <div class="valid white">valid</div>
-      <div class="valid red">valid</div>
-      <div class="valid orange">valid</div>
-      <div class="valid blue">valid</div>
+      <div class="white">valid</div>
+      <div class="red">valid</div>
+      <div class="orange">valid</div>
+      <div class="blue">valid</div>
     </div>
     <p class="words">it's okay not to be okay.</p>
     <img class="hope" src="VOH_Wordmark_Black.webp" />
+    <p class="url">www.voicesofhope.org</p>
   </body>
 </html>
