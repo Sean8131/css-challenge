@@ -21,8 +21,8 @@
       }
 
       .hope {
-        width: 200px;
-        height: 100px;
+        width: 100px;
+        height: 60px;
         background-color: #df4347;
         padding: 0px;
         mix-blend-mode: multiply;
@@ -53,8 +53,8 @@
         -webkit-text-stroke-color: black;
         color: red;
         z-index: 4;
-        bottom: 5px;
-        right: 5px;
+        bottom: 6px;
+        right: 6px;
         position: relative;
       
       }
@@ -64,8 +64,8 @@
         color: orange;
         position: absolute;
         z-index: 3;
-        bottom: 10px;
-        right: 10px;
+        bottom: 12px;
+        right: 12px;
       }
 
       .blue {
@@ -73,14 +73,20 @@
         color: aqua;
         position: absolute;
         z-index: 2;
-        bottom: 15px;
-        right: 15px;
+        bottom: 18px;
+        right: 18px;
       }
 
-      .words {
+      .feelings,
+      .okay {
         font-size: 25px;
         font-weight: 600;
-        margin: 0px;
+        margin-bottom: 20px;
+      }
+
+      .okay {
+        margin-top: 0px;
+        margin-bottom: 40px;
       }
 
       .wrapper {
@@ -96,14 +102,14 @@
   </head>
 
   <body>
-    <p class="words">your feelings <u>are</u></p>
+    <p class="feelings">your feelings <u>are</u></p>
     <div class="wrapper">
       <div class="white">valid</div>
       <div class="red">valid</div>
       <div class="orange">valid</div>
       <div class="blue">valid</div>
     </div>
-    <p class="words">it's okay not to be okay.</p>
+    <p class="okay">it's okay not to be okay.</p>
     <img class="hope" src="VOH_Wordmark_Black.webp" />
     <p class="url">www.voicesofhope.org</p>
   </body>
